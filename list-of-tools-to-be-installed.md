@@ -126,3 +126,4 @@ Job3: 03_mlapp_deploy_to_k8s
  - kubectl apply -f mlapp-service.yaml
  - kubectl delete -f mlapp-deployment
  - kubectl port-forward svc/rental-price-predictor-service 5000:5000
+ - kubectl exec --stdin -tty podname --bin/bash
