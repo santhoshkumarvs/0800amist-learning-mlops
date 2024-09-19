@@ -13,7 +13,7 @@ with mlflow.start_run(run_name="linear_regression_model"):
 
     # Load and process the data
     # rentalDF = pd.read_csv('data/rental_1000.csv')
-    rentalDF = pd.read_csv('s3://kfp-main-bt-alpha/data/rental_1000.csv')
+    rentalDF = pd.read_csv(https://santy3020.s3.ap-south-1.amazonaws.com/rental.csv)
 
     # Data Transformation (Feature Engineering)
     X = rentalDF[['rooms', 'sqft']].values  # Features
